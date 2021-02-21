@@ -1,0 +1,69 @@
+ayeletavr
+
+ayelet avraham
+
+
+=============================
+=      File description     =
+=============================
+SimpleHashSet.java - A superclass for implementations of hash-sets implementing the SimpleSet interface.
+ClosedHashSet.java - Closed HashSet class.
+OpenHashSet.java - Open HashSetClass.
+LinkedListsWrapper.java - In order to implement the open-hashing set using linked lists I decided to create this wrapper.
+The open HashTable is a table of linked-lists.
+CollectionFacadeSet.java - this can be considered also as a wrapper, because it wraps java.util Collections
+in the SimpleSet fields and methods.
+SimpleSetPerformanceAnalyzer.java - Compares the performance of the different data structures.
+RESULTS
+README
+
+=============================
+=          Design           =
+=============================
+SimpleHashSet is the superclass for all kinds of sets,
+including TreeSet, HashSet and LinkedLists from java.util Collections.
+In order to do so, I made SimpleHashSet an abstract class, and it's a father class to OpenHashSet and ClosedHashSet.
+By creating CollectionFacadeSet, java.util Collections can inherit SimpleHashSet.
+
+=============================
+=  Implementation details   =
+=============================
+Implementation of OpenHashSet table:
+In order to make an array of Linked-Lists as requested in open-hash set, I created a wrapper class named LinkedListWrapper.
+The class delegated java/util's Linked Lists methods to the OpenHashSet table.
+
+Implementation of deletion mechanism in ClosedHashSet:
+In order to Flag a deleted value (which is necessary for values that have the same hash),
+I created a null final static constant FLAG. Making the null static makes it always point to the same pointer,
+so I can mark all deleted values as deleted and not null.
+
+
+=============================
+=    Answers to questions   =
+=============================
+
+1. bad result for data1:
+OpenHashSet - this class holds a hash-table that is an array of linked lists.
+From this reason, search, insert and most other actions in the linked lists itself takes an O(n) running time.
+ClosedHashSet - this class holds an array of Objects (Strings in our case).
+There are no collisions in Closed Hash Set, so I would have expected it to be faster than the OpenHashSet, but the clamping makes the running time longer.
+
+2. Strengths and weaknesses:
+OpenHashSet - The contains method in OpenHashSet worked pretty well, it makes sense since hash set is good for searching an element (average time of O(1)).
+Add method in data1 worked bad as I said because of the linked list containers.
+ClosedHashSet - According to the measures, I wouldn't recommend using my closed hash set. every measure took a very long time,
+although theoretically it supposed to run faster than the open hash set.
+
+3. Compare between open and close:
+In my implementation, the open hash set is better than the closed hash set, from the reason that I mentioned in the previous question.
+
+4. Compare between my implementations to java's hash set:
+Measures for java's hash set worked perfectly in a short time.
+In order to understand why java's hash set are much better, I searched in the API and I think that what makes the big difference is the Spliterator.
+The spliterator method iterates the hash table and splits it, and I think it might make the search works faster.
+
+5. In my measures it took hashSet only 45 seconds to add data1, which is not so surprising as I expected it to the an average O(1).
+On the other hand, data1 contains a very long data and comparing to my implementations is took much less time.
+
+6. Additional information:
+I couldn't figure the exact reason or when it happens, but the initial capacity decrease by half so I had to make it 16*2.

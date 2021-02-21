@@ -1,0 +1,35 @@
+OpenHashSetaddeddata1 and it took40198 ms
+ClosedHashSetaddeddata1 and it took154948 ms
+LinkedListTestaddeddata1 and it took39050 ms
+HashSetTestaddeddata1 and it took45 ms
+
+TreeSetTestchecked if containshi,data1 and it took122 ns
+TreeSetTestchecked if contains-13170890158,data1 and it took229 ns
+OpenHashSetchecked if containshi,data1 and it took57 ns
+OpenHashSetchecked if contains-13170890158,data1 and it took776863 ns
+ClosedHashSetchecked if containshi,data1 and it took2007467 ns
+ClosedHashSetchecked if contains-13170890158,data1 and it took2275082 ns
+LinkedListTestchecked if containshi,data1 and it took716333 ns
+LinkedListTestchecked if contains-13170890158,data1 and it took775409 ns
+HashSetTestchecked if containshi,data1 and it took31 ns
+HashSetTestchecked if contains-13170890158,data1 and it took45 ns
+
+OpenHashSetaddeddata2 and it took33 ms
+TreeSetTestaddeddata2 and it took38 ms
+HashSetTestaddeddata2 and it took35 ms
+LinkedListTestaddeddata2 and it took21530 ms
+ClosedHashSetaddeddata2 and it took28014 ms
+
+OpenHashSetchecked if contains23,data2 and it took48 ns
+OpenHashSetchecked if containshi,data2 and it took45 ns
+TreeSetTestchecked if contains23,data2 and it took56 ns
+TreeSetTestchecked if containshi,data2 and it took95 ns
+HashSetTestchecked if contains23,data2 and it took37 ns
+HashSetTestchecked if containshi,data2 and it took33 ns
+LinkedListTestchecked if contains23,data2 and it took141 ns
+LinkedListTestchecked if containshi,data2 and it took496552 ns
+ClosedHashSetchecked if contains23,data2 and it took1801 ns
+ClosedHashSetchecked if containshi,data2 and it took739878 ns
+
+
+Process finished with exit code 0

@@ -1,0 +1,37 @@
+"C:\Program Files\Java\jdk-11.0.5\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.4\lib\idea_rt.jar=56854:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.4\bin" -Dfile.encoding=UTF-8 -classpath "C:\physics\שנה ב\OOP\ex4\out\production\ex4;C:\Users\ayeav\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ayeav\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar" SimpleSetPerformanceAnalyzer
+TreeSetTest added data1 and it took 93 ms
+OpenHashSet added data1 and it took 39360 ms
+ClosedHashSet added data1 and it took 169071 ms
+LinkedListTest added data1 and it took 37989 ms
+HashSetTest added data1 and it took 50 ms
+
+TreeSetTest checked if contains hi, data1and it took118 ns
+TreeSetTest checked if contains -13170890158, data1and it took150 ns
+OpenHashSet checked if contains hi, data1and it took34 ns
+OpenHashSet checked if contains -13170890158, data1and it took757296 ns
+ClosedHashSet checked if contains hi, data1and it took1944742 ns
+ClosedHashSet checked if contains -13170890158, data1and it took2191224 ns
+LinkedListTest checked if contains hi, data1and it took704534 ns
+LinkedListTest checked if contains -13170890158, data1and it took755617 ns
+HashSetTest checked if contains hi, data1and it took31 ns
+HashSetTest checked if contains -13170890158, data1and it took49 ns
+
+OpenHashSet added data2 and it took 40 ms
+TreeSetTest added data2 and it took 42 ms
+HashSetTest added data2 and it took 33 ms
+LinkedListTest added data2 and it took 22289 ms
+ClosedHashSet added data2 and it took 30991 ms
+
+OpenHashSet checked if contains 23, data2and it took46 ns
+OpenHashSet checked if contains hi, data2and it took40 ns
+TreeSetTest checked if contains 23, data2and it took55 ns
+TreeSetTest checked if contains hi, data2and it took114 ns
+HashSetTest checked if contains 23, data2and it took36 ns
+HashSetTest checked if contains hi, data2and it took33 ns
+LinkedListTest checked if contains 23, data2and it took140 ns
+LinkedListTest checked if contains hi, data2and it took523232 ns
+ClosedHashSet checked if contains 23, data2and it took1703 ns
+ClosedHashSet checked if contains hi, data2and it took790397 ns
+
+
+Process finished with exit code 0
